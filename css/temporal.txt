@@ -1,0 +1,241 @@
+/* ============================================
+   FLOWCONTROL PRINT - Personalizaciones
+   Basado en la plantilla Topic Listing
+   IMPORTANTE: No sobrescribir reglas del sticky
+   ============================================ */
+
+/* --- COLORES CORPORATIVOS --- */
+:root {
+    --fc-primary:    #13547a;   /* Azul corporativo */
+    --fc-secondary:  #d63d5c;   /* Rosa corporativo (Accent) */
+    --fc-gold:       #ffd700;   /* Dorado para acentos */
+    --fc-dark:       #1d2227;   /* Fondo oscuro */
+}
+
+/* --- NAVBAR STICKY (sobrescribe los colores de la plantilla original) --- */
+.sticky-wrapper.is-sticky .navbar {
+    background-color: var(--fc-secondary) !important;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+    color: var(--fc-secondary) !important;
+}
+
+.navbar-brand i {
+    color: var(--fc-secondary);
+}
+
+/* --- HERO --- */
+.hero-section {
+    background-image: linear-gradient(15deg, #0f3f5c 0%, #d63d5c 100%) !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-visual {
+    position: relative;
+    padding: 60px 0;
+}
+
+.floating-badge {
+    position: absolute;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 15px;
+    padding: 12px 20px;
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    animation: floatBadge 3s ease-in-out infinite;
+}
+.floating-badge i { font-size: 20px; }
+.badge-1 { top: 20%; left: 10%; animation-delay: 0s; }
+.badge-2 { top: 40%; right: 5%; animation-delay: 1s; }
+.badge-3 { bottom: 15%; left: 20%; animation-delay: 2s; }
+@keyframes floatBadge {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+/* --- BADGES --- */
+.badge-feature {
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    display: inline-block;
+    margin: 4px;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* --- STATS --- */
+.stat-box {
+    text-align: center;
+    padding: 30px 20px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: all 0.3s;
+}
+.stat-box:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+.stat-number {
+    font-size: 52px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #13547a, #d63d5c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+}
+.stat-label { color: #5a6673; font-size: 16px; margin-top: 5px; }
+
+/* --- FEATURE CARDS (custom-block) --- */
+.custom-block:hover {
+    background-color: #fff5f7;
+    transform: translateY(-3px);
+}
+.feature-icon {
+    width: 70px; height: 70px;
+    display: flex; justify-content: center; align-items: center;
+    background: linear-gradient(135deg, #13547a, #d63d5c);
+    border-radius: 10px;
+    color: #fff; font-size: 32px;
+    margin-bottom: 25px;
+}
+
+/* --- TIMELINE --- */
+.timeline-section {
+    background-image: linear-gradient(15deg, #0f3f5c 0%, #13547a 100%) !important;
+}
+
+/* --- SAR BADGE CARD --- */
+.sar-badge-card {
+    background: linear-gradient(135deg, #13547a, #d63d5c);
+    border-radius: 20px;
+    padding: 50px 40px;
+    text-align: center;
+    box-shadow: 0 25px 60px rgba(19, 84, 122, 0.25);
+}
+.sar-badge-card > i {
+    font-size: 110px;
+    color: #fff;
+    opacity: 0.95;
+}
+.sar-checks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    text-align: left;
+}
+.sar-check {
+    background: rgba(255,255,255,0.15);
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.sar-check i { color: #ffd700; }
+
+/* --- TECH CARDS --- */
+.tech-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: all 0.3s;
+    border: 1px solid #e0e0e0;
+}
+.tech-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--fc-secondary);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+.tech-card i {
+    font-size: 50px;
+    background: linear-gradient(135deg, #13547a, #d63d5c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 15px;
+    display: block;
+}
+.tech-card h6 { margin-bottom: 8px; color: #1d2227; }
+.tech-card p { font-size: 14px; margin: 0; color: #5a6673; }
+
+/* --- FAQ ACCORDION --- */
+.accordion-button:not(.collapsed) {
+    background: linear-gradient(135deg, #13547a, #d63d5c) !important;
+    color: #fff !important;
+}
+.accordion-button:not(.collapsed)::after { filter: brightness(0) invert(1); }
+
+/* --- CONTACT INFO CARD --- */
+.contact-info-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px 30px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+.contact-item:last-child { border-bottom: none; }
+.contact-item i {
+    font-size: 24px;
+    color: var(--fc-secondary);
+    min-width: 30px;
+    margin-top: 3px;
+}
+.contact-item small {
+    display: block;
+    color: #5a6673;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 3px;
+}
+.contact-item a, .contact-item span {
+    color: #1d2227;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* --- ICON LIST --- */
+.icon-list { list-style: none; padding: 0; }
+.icon-list li {
+    padding: 10px 0;
+    color: #5a6673;
+    font-size: 16px;
+}
+.icon-list li i {
+    color: var(--fc-secondary);
+    margin-right: 12px;
+    font-size: 18px;
+}
+
+/* --- RESPONSIVE --- */
+@media screen and (max-width: 991px) {
+    .navbar { background-color: var(--fc-secondary) !important; }
+    .hero-visual > i { font-size: 150px !important; }
+    .floating-badge { padding: 8px 14px; font-size: 13px; }
+}
+@media screen and (max-width: 480px) {
+    .hero-visual > i { font-size: 120px !important; }
+    .floating-badge { display: none; }
+    .sar-checks { grid-template-columns: 1fr; }
+}
