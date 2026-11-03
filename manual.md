@@ -667,35 +667,43 @@ El sistema valida la estructura del CAI, y la estructura del rango:
 
 ## 14. Preguntas Frecuentes
 
-### 14.1 ¿Qué versiones de QuickBooks son compatibles?
+### 14.1 ¿Cómo funciona FlowControl Print?
+
+FlowControl Print está diseñado para ser intuitivo y eficiente, operando en **3 simples pasos**:
+
+1. **Conecta QuickBooks:** Abre tu archivo de compañía (`.QBW`) en QuickBooks Desktop y presiona el botón **"Conectar"** en el panel izquierdo. El aplicativo detectará la sesión activa y sincronizará automáticamente tus clientes, productos, impuestos y transacciones.
+2. **Selecciona un CAI:** Registra tu Código de Autorización de Impresión (CAI) con su rango autorizado (Desde/Hasta) y fecha límite. Selecciona la autorización activa desde el panel lateral con un **doble clic**. El sistema valida automáticamente la estructura y detecta duplicados.
+3. **Factura e imprime:** Elige la transacción (Factura o Recibo de Venta) desde la lista, marca la casilla de **"Exonerado"** si aplica (para ingresar los correlativos de exención), genera la vista previa y envía a imprimir. El formato generado cumple al 100% con los requisitos fiscales del SAR de Honduras.
+
+### 14.2 ¿Qué versiones de QuickBooks son compatibles?
 
 FlowControl Print utiliza la integración oficial **QBFC16** (QuickBooks Foundation Classes), compatible con todas las versiones de **QuickBooks Desktop**: ediciones **Pro**, **Premier** y **Enterprise**. Ofrece la máxima estabilidad.
 
-### 14.2 ¿Cómo funciona la licencia?
+### 14.3 ¿Cómo funciona la licencia?
 
 Cada instalación requiere un **número de licencia único** que se valida en línea contra nuestros servidores. Una vez activada, la licencia queda registrada bajo su control **de por vida** y no requiere conexión permanente a internet.
 
-### 14.3 ¿Puedo usar múltiples CAI al mismo tiempo?
+### 14.4 ¿Puedo usar múltiples CAI al mismo tiempo?
 
 **Sí.** FlowControl Print soporta múltiples CAI simultáneos. Cada autorización tiene su propio rango (Desde/Hasta), fecha límite y puede activarse o desactivarse con doble clic. El sistema cuenta con controles de correlativos y alertas automáticas.
 
-### 14.4 ¿Las facturas cumplen con el SAR de Honduras?
+### 14.5 ¿Las facturas cumplen con el SAR de Honduras?
 
 **Absolutamente.** El formato incluye CAI, rango autorizado, fecha límite de emisión, valor en letras, RTN del cliente, descuentos, importes exonerados, exentos, gravados al 15% y 18%, y las tres copias requeridas (cliente, obligado tributario emisor, contabilidad). También maneja correlativos de orden de compra exenta, constancia de registro exonerado e identificativo SAG.
 
-### 14.5 ¿Qué pasa si tengo facturas con muchos ítems?
+### 14.6 ¿Qué pasa si tengo facturas con muchos ítems?
 
 FlowControl Print cuenta con un sistema de **paginación inteligente**. Si la factura tiene muchos ítems, se distribuyen automáticamente en varias páginas, manteniendo encabezados, totales y pie de página correctamente. Las páginas intermedias se ajustan según la cantidad de ítems hasta el final, y la última página muestra los totales completos.
 
-### 14.6 ¿Puedo gestionar datos de varias empresas?
+### 14.7 ¿Puedo gestionar datos de varias empresas?
 
 **Sí.** La aplicación permite configurar múltiples empresas con sus propios datos (RTN, dirección, teléfono, correo), cada una conectada a su archivo .QBW de QuickBooks.
 
-### 14.7 ¿Cómo obtengo el RTN del cliente automáticamente?
+### 14.8 ¿Cómo obtengo el RTN del cliente automáticamente?
 
 El RTN del cliente se obtiene automáticamente desde los **campos personalizados (Custom Fields)** del cliente en QuickBooks. Debe configurar un campo personalizado llamado **"RTN"** en el perfil de cada cliente en QuickBooks.
 
-### 14.8 ¿Qué hago si QuickBooks no se conecta?
+### 14.9 ¿Qué hago si QuickBooks no se conecta?
 
 1. Verifique que QuickBooks Desktop esté **abierto y con sesión iniciada**.
 2. Asegúrese de que el archivo de compañía (.QBW) sea accesible.
@@ -703,13 +711,13 @@ El RTN del cliente se obtiene automáticamente desde los **campos personalizados
 4. Reinicie tanto QuickBooks como FlowControl Print.
 5. Si el problema persiste, consulte los logs
 
-### 14.9 ¿Dónde se almacenan los datos?
+### 14.10 ¿Dónde se almacenan los datos?
 
 Todos los datos se almacenan localmente
 
 Los datos y la información son **100% suyos**. No se envía información a servidores externos excepto para la validación inicial de la licencia.
 
-### 14.10 ¿Puedo usar FlowControl Print sin Internet?
+### 14.11 ¿Puedo usar FlowControl Print sin Internet?
 
 **Sí.** Después de la activación inicial de la licencia (que requiere Internet), el aplicativo funciona completamente **sin conexión a Internet**.
 
