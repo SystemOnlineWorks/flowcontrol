@@ -60,6 +60,11 @@ Este aplicativo está dirigido a:
 
 ## 2. Requisitos del Sistema
 
+<!-- TAG: Requisitos, Hardware, Software, Instalacion -->
+<!-- AUDIENCE: Tecnico, Administrador -->
+<!-- LEVEL: Basico -->
+<!-- SEARCH: requisitos sistema windows quickbooks .net framework -->
+
 ### 2.1 Requisitos de Hardware
 
 | Componente | Mínimo | Recomendado |
@@ -113,6 +118,12 @@ Al ejecutar FlowControl Print por primera vez, se mostrará la ventana principal
 ---
 
 ## 4. Activación de Licencia
+
+<!-- TAG: Licencia, Activacion, GitHub, Validacion -->
+<!-- AUDIENCE: Administrador, Tecnico -->
+<!-- LEVEL: Intermedio -->
+<!-- SEARCH: licencia activar validar numero github token -->
+<!-- RELACIONADO: 15-Soporte-Tecnico -->
 
 ### 4.1 ¿Por qué se requiere una licencia?
 
