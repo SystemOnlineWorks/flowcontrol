@@ -141,11 +141,8 @@ FlowControl Print utiliza un sistema de licenciamiento basado en GitHub para val
 
 3. Ingrese el número de licencia proporcionado por el administrador.
 4. Haga clic en **Validar Licencia**.
-5. El sistema consultará el repositorio de GitHub para verificar la validez.
-6. Si la licencia es válida:
-   - Se registrará la fecha de activación.
-   - Se creará el archivo `licence.md` en la carpeta del aplicativo.
-   - El formulario se cerrará y podrá continuar.
+5. El sistema validará qué su licencia exista.
+6. Si la licencia es válida el formulario se cerrará y podrá continuar.
 
 ### 4.3 Mensajes de Error
 
@@ -154,7 +151,7 @@ FlowControl Print utiliza un sistema de licenciamiento basado en GitHub para val
 | "Número de licencia invalido contacte al administrador" | Licencia no existe en el repositorio | Verifique el número con el administrador |
 | "Debe registrar una licencia valida para continuar" | No se ha activado la licencia | Active la licencia antes de conectar |
 
-> **Importante:** La licencia es **de por vida** y queda registrada bajo su control. No requiere conexión permanente a Internet después de la activación inicial.
+> **Importante:** La licencia es **de por vida** y queda registrada bajo su control. Después de la activación inicial no requiere conexión permanente a Internet.
 
 ---
 
