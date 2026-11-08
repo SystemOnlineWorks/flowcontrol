@@ -131,7 +131,7 @@ FlowControl Print utiliza un sistema de licenciamiento basado en GitHub para val
 
 ### 4.2 Proceso de Activación
 
-1. Al hacer clic en **Conectar** por primera vez, si no existe el archivo `licence.md`, se abrirá automáticamente el formulario de licencia.
+1. Al hacer clic en **Conectar** por primera vez, se abrirá automáticamente el formulario de licencia.
 2. También puede acceder manualmente desde: **Opciones → Licencia**.
 
 **Formulario de Licencia:**
